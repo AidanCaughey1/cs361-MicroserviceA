@@ -6,7 +6,8 @@ This microservice allows other programs to verify whether a given media URL is v
 **How to Programmatically REQUEST Data**
 To request data from the microservice, send a POST request to the following endpoint: **http://localhost:5000/verify**
 The request must include a JSON body with the following parameter: url
-Example Request:
+
+**Example Request:**
 import requests
 
 response = requests.post(
@@ -16,7 +17,8 @@ response = requests.post(
 
 **How to Programmatically RECEIVE Data**
 The microservice will respond with a JSON object. The response will vary depending on whether the link is valid or not.
-Example Response (valid):
+
+**Example Response (valid):**
 {
   "valid": true,
   "file_name": "example.mp4",
@@ -24,13 +26,12 @@ Example Response (valid):
   "file_size": "1585939"
 }
 
-Example Response (invalid):
+**Example Response (invalid):**
 {
   "valid": false,
   "error": "URL not reachable",
   "error_code": 404
 }
 
-UML Sequence Diagram
-
+**UML Sequence Diagram**
 ![UML Sequence Diagram](UML.png)

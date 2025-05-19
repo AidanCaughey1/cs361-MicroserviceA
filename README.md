@@ -31,4 +31,6 @@ Example Response (invalid):
   "error_code": 404
 }
 
+UML Sequence Diagram
+
 ![UML Sequence Diagram](UML.png)

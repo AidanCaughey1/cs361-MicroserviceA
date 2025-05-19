@@ -3,6 +3,12 @@ cs361-Microservice A
 
 This microservice allows other programs to verify whether a given media URL is valid and retrieve basic metadata about the file (file name, type, and size).
 
+**How to Run Locally**
+git clone https://github.com/AidanCaughey1/cs361-MicroserviceA.git
+cd cs361-MicroserviceA
+pip install -r requirements.txt
+python app.py
+
 **How to Programmatically REQUEST Data**
 To request data from the microservice, send a POST request to the following endpoint: **http://localhost:5000/verify**
 The request must include a JSON body with the following parameter: url

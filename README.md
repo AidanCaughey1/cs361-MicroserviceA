@@ -30,3 +30,5 @@ Example Response (invalid):
   "error": "URL not reachable",
   "error_code": 404
 }
+
+(UML.png)
